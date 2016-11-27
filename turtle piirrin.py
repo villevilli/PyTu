@@ -5,23 +5,22 @@ Created on Sat Nov 26 09:43:20 2016
 @author: Ville
 """
 
-import turtle
-forward(200)
+from turtle import*
 
 vastaus = input("e=eteen päin v=vasemmalle o=oikealle(Lopeta lopettaa): ")
 
 while vastaus != "lopeta":
-    vastaus = input("Jalka, Ydinase vai Torakka? (Lopeta lopettaa): ")
+    vastaus = input("w=eteen päin d=vasemmalle a=oikealle(Lopeta lopettaa ")
     vastaus = vastaus.lower()
     if vastaus == "lopeta":
         print("loppu")
         break
-    elif vastaus == "e":
+    elif vastaus == "w":
         forward(50)
-    elif vastaus == "v":
-        left(90)
-    elif vastaus == "o":
-        right(90)
+    elif vastaus == "d":
+        left(45)
+    elif vastaus == "a":
+        right(45)
     else:
         print("tuntematon komento")
         
