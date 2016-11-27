@@ -1,18 +1,22 @@
-# -*- coding: utf-8 -*-
+
 """
 Created on Sat Nov 26 09:43:20 2016
 
 @author: Ville
 """
 
-from turtle inport
+import turtle
+forward(200)
+
+vastaus = input("e=eteen päin v=vasemmalle o=oikealle(Lopeta lopettaa): ")
+
 while vastaus != "lopeta":
     vastaus = input("Jalka, Ydinase vai Torakka? (Lopeta lopettaa): ")
     vastaus = vastaus.lower()
     if vastaus == "lopeta":
         print("loppu")
         break
-    if vastaus == "e":
+    elif vastaus == "e":
         forward(50)
     elif vastaus == "v":
         left(90)
